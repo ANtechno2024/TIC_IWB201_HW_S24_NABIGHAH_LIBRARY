@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+    <script src="myFunction.js" defer></script>
+    <script src="jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"  type="image/png" href="images/icon.png">
+</head>
+<body>
+
+  <div class="container">
+    <nav>
+        <a href="home.html"><img src="images/logo.png" class="logo" alt="SVU LOGO"></a>
+        <ul>
+          <li><a href="home.html"> Home </a></li>
+          <li><a href="AboutUs.html"> About us </a></li>
+          <li><a href="Books.html">Books</a></li>
+        </ul>       
+    </nav>
+
+    <h2 id="tit"> Choose and receive any book you want from our library </h2>
+    <table>
+        <tr>
+            <th>رمزالكتاب ISBN</th>
+            <th>العنوان</th>
+            <th> السعر</th>
+            <th> إظهار التفاصيل</th>
+            <th>اختيار</th>
+        </tr>   
+        <tr>
+            <td> 9789770916738 </td>
+            <td> الف ليلة وليلة</td>
+            <td>25,000 ل.س</td>
+            <td tabindex="0"><input type="checkbox" value="عرض التفاصيل" id="checkbox1" onclick="toggleDetails(1)"></td>
+            <td tabindex="0"><input type="radio" name="selection" tabindex="-1" onclick="selectRow(1)"></td>
+        </tr>
+        <tr id="detailsRow1" class="details">
+            <td colspan="5">
+                <div class="pspaces">
+                <p> الناشر: دار المعارف</p>
+                <p> تصنيف الكتاب: قصص شعبية</p>
+                <p>  كتاب أسطوري يضم مجموعة من القصص الشعبية من الشرق الأوسط وجنوب آسيا وشمال إفريقيا،</p>            
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="imgspaces">
+                <img src="images/1.jpg" alt="">               
+                <img src="images/2.jpg" alt="">           
+                <img src="images/3.jpg" alt="">
+                </div>           
+            </td>
+        </tr>
+        <tr>
+           <td> 139789770950685</td>
+            <td>  رجال في الشمس </td>
+    
+            <td>90,000 ل.س</td>
+            <td tabindex="0"><input type="checkbox" value="عرض التفاصيل" id="checkbox2" onclick="toggleDetails(2)"></td>
+            <td tabindex="0"><input type="radio" name="selection" tabindex="-1" onclick="selectRow(2)"></td>
+        </tr>
+        <tr id="detailsRow2" class="details">
+            <td colspan="5">
+                <div class="pspaces">
+               <p> الناشر: دار الشروق </p>
+                <p>التصنيف: أدب رمزي </p>
+                <p>رواية عن معاناة الفلسطينيين بعد النكبة، مليئة بالرمزية حول الفقد والألم​</p>
+                </div>
+                <br>
+                <br>
+                <div class="imgspaces">
+                <img src="images/4.jpg" alt="">
+                <img src="images/5.jpg" alt="">
+                <img src="images/6.jpg" alt="">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>  9789771452729</td>
+            <td>هيبتا </td>
+            <td>60,000 ل.س</td>
+            <td tabindex="0"><input type="checkbox" value="عرض التفاصيل" id="checkbox3" onclick="toggleDetails(3)"></td>
+            <td tabindex="0"><input type="radio" name="selection" tabindex="-1" onclick="selectRow(3)"></td>
+        </tr>
+        <tr id="detailsRow3" class="details">
+            <td colspan="5">
+                <div class="pspaces">
+                <p>الناشر: دار الشروق </p>
+                <p>التصنيف: أدب رومانسي   </p>
+                <p>رواية تصف مراحل العلاقات الإنسانية من البداية إلى النهاية​</p>
+                </div>
+                <br>
+                <br>
+                <div class="imgspaces">
+                <img src="images/7.jpg" alt="">
+                <img src="images/8.jpg" alt="">
+                <img src="images/9.jpg" alt="">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>9789953361847</td>
+           <td>ثلاثية غرناطة</td>>
+            <td> 50,000 ل.س </td>
+            <td tabindex="0"><input type="checkbox" value="عرض التفاصيل" id="checkbox4" onclick="toggleDetails(4)"></td>
+            <td tabindex="0"><input type="radio" name="selection" tabindex="-1" onclick="selectRow(4)"></td>
+        </tr>
+        <tr id="detailsRow4" class="details">
+            <td colspan="5">
+                <div class="pspaces">
+                <p>الناشر: دار الشروق</p>
+                <p>التصنيف: أدب تاريخي </p>
+                <p>تناولت سقوط الممالك الإسلامية في الأندلس عبر ثلاث روايات مترابطة</p>        
+                </div>
+                <br>
+                <br>
+                <div class="imgspaces">
+                <img src="images/10.jpg" alt="">
+                <img src="images/11.jpg" alt="">
+                <img src="images/12.jpg" alt="">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td> 9789770932209 </td>
+            <td> الفيل الأزرق</td>
+            <td> 40,000 ل.س</td>
+            <td tabindex="0"><input type="checkbox" value="عرض التفاصيل" id="checkbox5" onclick="toggleDetails(5)"></td>
+            <td tabindex="0"><input type="radio" name="selection" tabindex="-1" onclick="selectRow(5)"></td>
+        </tr>
+        <tr id="detailsRow5" class="details">
+            <td colspan="5">
+                <div class="pspaces">
+                <p> الناشر: دار الشروق</p>
+                <p>التصنيف: أدب نفسي</p>               
+                <p> رحلة داخل النفس البشرية عبر حكايات معقدة وغامضة في مستشفى للأمراض النفسية </p>
+                </div>
+                <br>
+                <br>
+                <div class="imgspaces">
+                <img src="images/13.jpg" alt="">
+                <img src="images/14.jpg" alt="">
+                <img src="images/15.jpg" alt="">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <button class="btn" onclick="checkSelection()"><span>مــــتـابـــعـة</span></button>
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+            <div class="checkout-form">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>معلومات الزبون</h2>
+                <form>
+                    <div class="form-row">
+                        <div class="user-box">
+                            <input type="text" id="fullName" name="" required="">
+                            <label>الاسم الثلاثي</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" id="nationalId" name="" required="">
+                            <label>الرقم الوطني</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="user-box">
+                            <input type="tel" id="mobileNumber" name="" required="">
+                            <label>رقم الموبايل</label>
+                        </div>
+                        <div class="user-box">
+                            <input type="text" id="email" name="" required="">
+                            <label>البريد الإلكتروني</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="user-box">
+                            <p>تاريخ الولادة:</p>
+                            <input type="date" id="birthdate" name="" required="">
+                        </div>
+                    </div>
+                        <h2>انا لست روبوت</h2>
+                        <div class="Captcha-img" id="captchaContainer"></div>
+                    <div class="user-box">
+                        <input type="text" id="captchaInput" required="">
+                        <label> أدخل الرمز الظاهر للتأكيد</label>
+                    </div>
+                        <button class="btn" type="button" onclick="refreshCaptcha()"><span>توليد رمز جديد</span></button>
+                        <br>
+                        <button class="btn" type="button" onclick="completePurchase()"><span>أرسال معلوماتك</span></button>
+                </div>   
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>         
+    </body>
+</html>
